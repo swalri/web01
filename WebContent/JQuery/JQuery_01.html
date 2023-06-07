@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>첫번째 jQuery파일</title>
+<!-- html 주석문기호, ../는 한단계 상위 폴더로 이동 -->
+<script type="text/javascript" src="../js/jquery.js"></script>
+
+<script type="text/javascript">
+	//자바스크립트 한줄 주석문 기호, type속성 생략가능, type속성을 생략하면 기본값으로 자바스크립트로 인식한다.
+	//$는 jWuery란 뜻이고 Q는 대문자이다.
+	$(document).ready(function() {
+		//h2태그에 클릭 이벤트 사건이 발생하면
+		jQuery("h2").click(function() {
+			//this는 현재요소 h2태그를 가리킨다.
+			//jQuery hide()함수로 해당영역 h2를 사라지게 한다.
+			$(this).hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<h2>여기를 클릭하면 사라집니다.</h2>
+</body>
+</html>

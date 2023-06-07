@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<script src="../js/jquery.js"></script>
+
+<style type="text/css">
+div.out {
+	width: 230px; /*너비를 230픽셀*/
+	height: 200px; /*높이를 200픽셀*/
+	background-color: yellow; /*배경색을 노란색*/
+}
+</style>
+</head>
+<body>
+	<div class="out">
+		<p>마우스를 여기로 움직이세요.</p>
+		<p>0</p>
+	</div>
+
+	<script>
+		$i = 0;//jQuery 변수 $idp 0을 대입
+
+		//div.out요소위로 마우스오버 이벤트 사건이 발생하면
+		$("div.out").mouseover(function() {
+			//p:first 선택자는 p태그 첫번째 요소에 mouseover했다라는 문자로 변경적용한다.
+			//text() jQuery함수의 인자값이 있으면 해당 요소에 문자를 변경적용한다
+			$("p:first", this).text("mouse over");
+			//p:last선택지는 p태그 마지막 요소에 선행증가한 숫자값을 변경적용
+			$("p:last", this).text(++$i);
+		});
+	</script>
+
+</body>
+</html>
