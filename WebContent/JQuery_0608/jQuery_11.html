@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메소드 체이닝</title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#catBtn').click(function() {
+			$('#cat').show().fadeOut("slow");
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="button" id="catBtn" value="메소드체이닝">
+	<hr>
+	<img id="cat" src="../images/cat.png" width="300" height="300"
+		style="display: none; position: relative;">
+
+
+</body>
+</html>

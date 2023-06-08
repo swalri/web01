@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#fadeIn").click(function() {
+			$("#cat").fadeIn('slow');
+		});//#btn01 click
+		$("#fadeOut").click(function() {
+			$("#cat").fadeOut('slow');
+		});//#btn01 click
+	});//ready
+</script>
+</head>
+<body>
+	<button id="fadeIn" type="button">fadeIn()</button>
+	<input type="button" id="fadeOut" value="fadeOut()">
+	<hr>
+	<img id="cat" src="../images/cat.png" width="300" height="300"
+		style="display: none; position: relative;">
+
+
+</body>
+</html>

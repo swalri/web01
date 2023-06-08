@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<style type="text/css">
+/* type속성 생략 가능 , 생략하면 기본값으로 css로 인식한다.*/
+body {
+	background: #EEF;
+}
+
+div {
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+
+	<h1>특정영역에 x,y좌표값을 출력</h1>
+
+	<div id="log"></div>
+
+	<script>
+		$(document).mousemove(function(e) {
+			$("#log").text("X 좌표 : "+e.pageX+"\, Y 좌표 : "+e.pageY);
+		});
+	</script>
+
+</body>
+</html>

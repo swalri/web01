@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("#cat").animate({
+				left : "500px"
+			});//dog animate
+		});//button click
+	});//ready
+</script>
+</head>
+<body>
+	<img id="cat" src="../images/cat.png" width="250" height="250"
+		style="position: relative;" alt="고양이">
+	<hr>
+	<!--button태그의 type속성의 기본값은 submit이다 -->
+	<button type="button">animate()함수</button>
+</body>
+</html>

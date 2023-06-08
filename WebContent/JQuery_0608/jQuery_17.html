@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#attr_Btn").click(function() {
+			/*문제) jQuery attr()함수를 사용하여 alt속성값을 best로 변경*/
+			$("#cat").attr("alt", "검은 고양이");
+		});
+	});
+</script>
+</head>
+<body>
+	<img id="cat" src="../images/cat.png" width="120" height="150" alt="고양이">
+	<hr>
+	<button type="button" id="attr_Btn">alt속성값변경</button>
+
+</body>
+</html>

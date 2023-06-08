@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<input type="button" id="cat" value="Show Apple">
+	<hr>
+	<img id="cat_Image" src="../images/cat.png" width="250" height="250"
+		style="display: none;">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#cat").click(function(){
+				//토글은 지정한영역이 숨겨져있으면 보여주며 보여져있으면 숨긴다
+				$("#cat_Image").toggle();
+			});
+		});
+	</script>
+</body>
+</html>

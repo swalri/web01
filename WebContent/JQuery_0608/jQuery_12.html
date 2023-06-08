@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#text01').click(function() {
+			alert($("#target").text());
+		});
+
+		$("#html01").click(function() {
+			alert($('#target').html(<b>문저룰 찬허개 변경적용</br>);
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="target">
+		이것은 <strong>하나의</strong> 단락입니다
+	</p>
+	<button type="button" id="text01">text()</button>
+	<input type="button" id="html01" value="html()">
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".addr_Btn").click(function() {
+			alert($("#addr").val());
+			return false;
+		});
+	});
+</script>
+</head>
+<body>
+	<form>
+		주소 : <input type="text" id="addr" size="24">
+		<button type="submit" class="addr_Btn">val()</button>
+	</form>
+
+
+</body>
+</html>

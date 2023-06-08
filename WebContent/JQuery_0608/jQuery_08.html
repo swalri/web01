@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#btn01').click(function(){
+			$('#st01').animate({
+				left:'600px',
+				opacity: "0.5",
+				width: "250px"
+			});//st01 animate
+		});//#btn01 click
+	});//ready
+</script>
+</head>
+<body>
+	<img id="st01" src="../images/cat.png" width="120" height="150"
+		style="position: relative;">
+	<hr>
+	<input type="button" value="animate()" id="btn01">
+</body>
+</html>

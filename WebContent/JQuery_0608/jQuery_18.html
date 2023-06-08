@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn01").click(function() {
+			$("p").append("<strong style='color:red;font-size:28px;'>문자끝에 추가</strong>");
+		});
+		$("#btn02").click(function(){
+			$("p").prepend("<strong style='color:blue;font-size:22px;'>문자앞에 추가</strong>");
+		});
+	});
+</script>
+</head>
+<body>
+
+<p>I would like to say</p>
+<button type="button" id="btn01">append()</button>
+<button type="button" id="btn02">prepend()</button>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+</head>
+<body>
+	<button type="button" id="btn01">show Image</button>
+	<hr>
+	<img id="st" src="../images/cat.png" width="150" height="150"
+		style="display: none">
+	<script>
+		$(document).ready(function(){//준비
+			$("#btn01").click(function(){
+				$('#st').show('slow');
+			});
+		});
+	</script>
+</body>
+</html>

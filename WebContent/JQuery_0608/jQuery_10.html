@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#slideDown").click(function() {
+			$("#cat").slideDown('slow');
+		});//#btn01 click
+		$("#slideUp").click(function() {
+			$("#cat").slideUp('slow');
+		});//#btn01 click
+	});//ready
+</script>
+</head>
+<body>
+	<button id="slideDown" type="button">slideDown()</button>
+	<button id="slideUp" type="button">slideUp()</button>
+	<hr>
+	<img id="cat" src="../images/cat.png" width="300" height="300"
+		style="display: none; position: relative;">
+
+
+</body>
+</html>
