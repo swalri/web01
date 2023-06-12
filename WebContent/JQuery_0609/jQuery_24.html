@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<style type="text/css">
+div {
+	width: 200px;
+	height: 150px;
+	float: left;
+	margin: 5px;
+}
+</style>
+<script type="text/javascript">
+	$(function() {
+		$("#menu01").click(function() {
+			$.ajax({
+				url : "menu.html",
+				dataType : 'html',
+				success : function(data) {
+					$("#result01").html(data);
+				}
+			});
+			return false;
+		});
+		$("#menu02").click(function() {
+			$.ajax({
+				url : "menu.html",
+				dataType : 'html',
+				success : function($data) {
+					$("#result02").html($($data).find("li"));
+				}
+			});
+			return false;
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<a href="#" id="menu01">메뉴01</a>
+		<hr>
+		<span id="result01"></span>
+	</div>
+	<div>
+		<a href="#" id="menu02">메뉴02</a>
+		<hr>
+		<span id="result02"></span>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+

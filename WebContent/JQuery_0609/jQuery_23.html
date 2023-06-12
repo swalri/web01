@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<style type="text/css">
+div {
+	width: 100px;
+	height: 80px;
+	float: left;
+	margin: 3px;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#menu01").click(function() {
+			$("#re01").load("menu.html");
+			return false;
+		})
+		$("#menu02").click(function() {
+			$("#re02").load("menu.html li");
+			return false;
+		})
+	});
+</script>
+</head>
+<body>
+	<a href="#" id="menu01">메뉴보기 01</a>
+	<br>
+	<span id="re01"></span>
+	<div>
+		<a href="#" id="menu02">메뉴02</a> <br> <span id="re02"></span>
+	</div>
+</body>
+</html>
+
+
+
+
+
+

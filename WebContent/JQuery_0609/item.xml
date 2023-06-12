@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="1" name="블루베리">
+		<price>23000</price>
+		<des>블루베리</des>
+	</item>
+	<item id="2" name="체리">
+		<price>20000</price>
+		<des>체리</des>
+
+	</item>
+</items>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<style type="text/css">
+p {
+	background: yellow;
+}
+
+.container {
+	width: 200px;
+	height: 100px;
+	border: 1px dotted red;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#btn01").click(function() {
+			$(".container").remove();
+		});
+		$(".btn02").click(function() {
+			$(".container").empty();
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="button" id="btn01" value="remove()">
+	<button class="btn02">empty()</button>
+	<hr>
+	<div class="container">
+		<p>Hello</p>
+		<p>GoodBye</p>
+	</div>
+</body>
+</html>
+
+
+
+
+
+

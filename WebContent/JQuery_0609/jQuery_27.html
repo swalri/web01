@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#submit").click(function() {
+			$username = $(".name").val();
+			$sendData = "name2 = " + $username;
+			$.post("result.jsp", $sendData, function(data) {
+				$("#result").html(data);
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>비동기식 $.post() jQuery 아작스함수</h1>
+	<form action="">
+		<label>이름 입력 : </label> <input type="text" class="name" size="14">
+		<br> <input type="button" id="submit" value="전송">
+	</form>
+	<hr>
+	<div id="result"></div>
+</body>
+</html>
+
+
+
+
+
+

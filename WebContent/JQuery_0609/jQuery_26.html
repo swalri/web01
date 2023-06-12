@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<style type="text/css">
+table, th {
+	border: 1px solid gray;
+}
+</style>
+<script type="text/javascript">
+	$(function() {
+		$.get("item.xml", function(data) {
+			$('#result').append("<tr> <th>id</th> <th>name</th> <th>price</th> <th>des</th> </tr>");
+			$(data).find("item").each(function(){
+				$item = $(this);
+				$("#result").append("<tr><th>"+$item.attr("id")+"</th><th>"+$item.attr("name")+"</th><th>"+$item.find("price").text()+"</th><th>"+$item.find("des").text()+"</th></tr>");
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>jQuery 비동기식$.get()함수</h1>
+	<table id="result"></table>
+</body>
+</html>
+
+
+
+
+
+

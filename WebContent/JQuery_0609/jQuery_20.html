@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<style type="text/css">
+div {
+	width: 60px;
+	height: 60px;
+}
+</style>
+</head>
+<body>
+	<div id="div01" style="background-color: blue;"></div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#btn01").click(function() {
+				var color = $("#div01").css("background-color");
+				$("#result").text("background-color속성값 : " + color);//rgb값으로 반환한다
+			});
+			$("#btn02").click(function() {
+				$("#div01").css("background-color", "orange");
+			});
+		});
+	</script>
+	<button id="btn01">배경색 이름</button>
+	<button id="btn02">배경색 변경</button>
+	<p id="result">배경색</p>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#btn01").click(function() {
+			$("#div01").addClass("warn");
+		});
+		$("#btn02").click(function() {
+			$("#div01").removeClass("warn");
+		});
+	});
+</script>
+<style type="text/css">
+.warn {
+	background: orange;
+	border: 3px solid red;
+}
+</style>
+</head>
+<body>
+	<div id="div01">
+		<p>예제</p>
+	</div>
+	<hr>
+	<button id="btn01">addClass()</button>
+	<button id="btn02">removeClass</button>
+
+</body>
+</html>
+
+
+
+
+
+
